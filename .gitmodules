@@ -1,0 +1,3 @@
+[submodule "memolist"]
+	path = memolist
+	url = git@github.com:wakamesoba98/memolist.el.git
