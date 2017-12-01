@@ -4,6 +4,7 @@
 (load "tabbar-config")
 (load "neotree-config")
 (load "clojure")
+(load "popwin-config")
 (load "memolist/memolist")
 (load "private")
 (when (display-graphic-p)

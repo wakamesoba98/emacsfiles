@@ -11,6 +11,7 @@
     find-file-in-project
     neotree
     tabbar
+    popwin
     clojure-mode
     cider
     clj-refactor

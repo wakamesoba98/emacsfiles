@@ -16,7 +16,6 @@ tabbar.el v1.7."
                      ((eq (current-buffer) b) b)
                      ((buffer-file-name b) b)
                      ((char-equal ?\  (aref (buffer-name b) 0)) nil)
-                     ((string-match "^direx:" (buffer-name b)) nil) ; direx バッファを非表示
                      ((equal "*Messages*" (buffer-name b)) nil) ; *Messages* バッファを非表示
                      ((equal "*scratch*" (buffer-name b)) nil) ; *scratch* バッファを非表示
                      ((buffer-live-p b) b)))

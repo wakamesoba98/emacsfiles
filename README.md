@@ -14,6 +14,8 @@ emacsfiles
 * フォント
   * VLゴシック
   * Source Code Pro
+* コマンド
+  * The Silver Searcher (`ag`)
 
 ## Setup
 
@@ -36,9 +38,12 @@ M-x all-the-icons-install-fonts
 
 * `C-z` Undo
 * `C-S-z` Redo
-* `<backtab>` (=`Shift+Tab`) 逆インデント
+* `C-PgUp` 前のタブへ
+* `C-PgDn` 次のタブへ
+* `S-Tab` 逆インデント
+* `C-Enter` Gitプロジェクト内のファイルを名前で検索します (IntelliJのShift2回押しに近い機能)
 * `C-x C-d` 画面左にファイラー (Neotree) を表示します
-* `C-c M-v` プロジェクトのnREPLに自動で繋ぎに行きます (clojure-mode)
+* `C-c M-v` Vagrant上のnREPLに自動で繋ぎに行きます (clojure-mode)
 * `C-c C-c p` 現在のファイルをChromeで開きます Markdown執筆に便利
 * `M-x pd` LaTeXファイルからPDFをコンパイルします (要TeXLive)
 
