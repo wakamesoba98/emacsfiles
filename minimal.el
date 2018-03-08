@@ -10,6 +10,12 @@
 ;; yes/no -> y/n
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; ファイル末尾に改行を追加する
+(setq require-final-newline t)
+
+;; 選択後にキー入力で上書き
+(delete-selection-mode 1)
+
 ;; インデント
 (setq-default tab-width 2 indent-tabs-mode nil)
 (setq js-indent-level 2)
@@ -18,6 +24,10 @@
 (scroll-bar-mode -1)
 (tool-bar-mode 0)
 (menu-bar-mode 0)
+
+;; TRAMPのサイズ制限解除
+(setq tramp-copy-size-limit nil)
+(setq tramp-inline-compress-start-size nil)
 
 ;; redo
 (require 'redo+)
