@@ -26,10 +26,11 @@ emacsfiles
 (load "core")
 ```
 
-起動後に以下のコマンドを実行してアイコンフォントをインストールします。
+起動後に以下のコマンドを実行してアイコンフォントとPython用の仮想環境をインストールします。
 
 ```
 M-x all-the-icons-install-fonts
+M-x jedi:install-server
 ```
 
 ## Keybinds
