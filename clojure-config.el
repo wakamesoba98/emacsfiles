@@ -20,22 +20,13 @@
         cider-repl-use-clojure-font-lock t
         cider-prompt-save-file-on-load 'always-save
         cider-font-lock-dynamically '(macro core function var)
-        cider-overlays-use-font-lock t
-        company-idle-delay 0
-        company-minimum-prefix-length 2
-        company-selection-wrap-around t)
+        cider-overlays-use-font-lock t)
   (cider-repl-toggle-pretty-printing))
 
 (use-package clj-refactor
   :defer t
   :diminish clj-refactor-mode
   :config (cljr-add-keybindings-with-prefix "M-RET"))
-
-(use-package company
-  :defer t
-  :bind
-  (:map company-active-map
-        ([tab] . company-complete-selection)))
 
 (defun cider-connect-from-local-file ()
   (interactive)

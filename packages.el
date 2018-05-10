@@ -20,7 +20,12 @@
     markdown-mode
     yaml-mode
     vagrant-tramp
-    ag))
+    ag
+    python-mode
+    jedi-core
+    company-jedi
+    virtualenvwrapper
+    auto-virtualenvwrapper))
 
 ;; リポジトリの設定
 (require 'package)
