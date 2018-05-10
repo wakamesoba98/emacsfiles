@@ -30,6 +30,10 @@
   (let ((filename (buffer-file-name (window-buffer (minibuffer-selected-window)))))
     (message (shell-command-to-string (concat "platex " filename " && dvipdfmx $(echo " filename " | sed -e s/\.tex$/.dvi/)")))))
 
+(defun png2xbb ()
+  (interactive)
+  (message (shell-command-to-string (concat "find ./png/ -type f -regextype posix-basic -regex '.*.\\(png\\|jpg\\)' -exec extractbb {} \\;"))))
+
 ;; デーモンを起動
 (require 'server)
 (unless (server-running-p)
