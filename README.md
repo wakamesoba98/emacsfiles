@@ -12,7 +12,7 @@ emacsfiles
 ## Dependencies
 
 * フォント
-  * VLゴシック
+  * Noto Fonts
   * Source Code Pro
 * コマンド
   * The Silver Searcher (`ag`)

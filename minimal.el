@@ -64,7 +64,7 @@
 (show-paren-mode t)
 (setq show-paren-style 'expression)
 (setq show-paren-delay 0.0)
-(set-face-background 'show-paren-match-face "Gray24")
+(set-face-attribute 'show-paren-match nil :background "Gray24")
 
 ;; 現在行
 (global-hl-line-mode t)

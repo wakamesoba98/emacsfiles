@@ -8,7 +8,7 @@
         company-tooltip-flip-when-above t
         company-show-numbers t ;; Easy navigation to candidates with M-<n>
         company-idle-delay 0
-        company-minimum-prefix-length 0
+        company-minimum-prefix-length 1
         company-selection-wrap-around t)
   (bind-keys :map company-active-map
              ([tab] . company-complete-selection)))
