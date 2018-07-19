@@ -12,6 +12,7 @@
     neotree
     tabbar
     popwin
+    dumb-jump
     clojure-mode
     cider
     clj-refactor

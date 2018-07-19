@@ -23,6 +23,15 @@
 ;; CSS
 (setq css-indent-offset 2)
 
+;; dumb-jump: 関数宣言まで移動
+(use-package dumb-jump
+  :config
+  (setq dumb-jump-mode t
+        dumb-jump-selector 'ivy
+        dumb-jump-use-visible-window nil)
+  (define-key global-map [(super b)] 'dumb-jump-go)
+  (define-key global-map [(super shift b)] 'dumb-jump-back))
+
 ;; LaTeX
 (defun pd ()
   (interactive)
