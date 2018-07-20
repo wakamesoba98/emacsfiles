@@ -29,10 +29,10 @@
 (setq tramp-copy-size-limit nil)
 (setq tramp-inline-compress-start-size nil)
 
-;; redo
-(require 'redo+)
+;; undo-tree
+(global-undo-tree-mode)
 (global-set-key (kbd "C-z") 'undo)
-(global-set-key (kbd "C-S-z") 'redo)
+(global-set-key (kbd "C-S-z") 'undo-tree-redo)
 
 ;; 行番号
 (require 'linum)

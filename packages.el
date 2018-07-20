@@ -4,9 +4,9 @@
     ("gnu"       . "http://elpa.gnu.org/packages/")))
 
 (defvar packages
-  '(use-package
-    redo+
-    darcula-theme
+  '(darcula-theme
+    use-package
+    undo-tree
     all-the-icons
     find-file-in-project
     neotree
