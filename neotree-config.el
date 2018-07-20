@@ -28,8 +28,3 @@
   (setq neo-smart-open t)
   :bind
   ("C-x C-d" . neotree-project-dir))
-
-(defun show-todos ()
-  (interactive)
-  (ag-project-regexp "TODO|FIXME"))
-(global-set-key (kbd "C-x t") 'show-todos)
