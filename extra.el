@@ -25,12 +25,14 @@
 
 ;; dumb-jump: 関数宣言まで移動
 (use-package dumb-jump
+  :defer t
+  :bind
+  ([(super b)] . dumb-jump-go)
+  ([(super shift b)] . dumb-jump-back)
   :config
   (setq dumb-jump-mode t
         dumb-jump-selector 'ivy
-        dumb-jump-use-visible-window nil)
-  (define-key global-map [(super b)] 'dumb-jump-go)
-  (define-key global-map [(super shift b)] 'dumb-jump-back))
+        dumb-jump-use-visible-window nil))
 
 ;; LaTeX
 (defun pd ()
