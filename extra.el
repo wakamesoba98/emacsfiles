@@ -39,7 +39,7 @@
   (interactive)
   (save-buffer)
   (let ((filename (buffer-file-name (window-buffer (minibuffer-selected-window)))))
-    (message (shell-command-to-string (concat "platex " filename " && dvipdfmx $(echo " filename " | sed -e s/\.tex$/.dvi/)")))))
+    (message (shell-command-to-string (concat "uplatex " filename " && dvipdfmx $(echo " filename " | sed -e s/\.tex$/.dvi/)")))))
 
 (defun png2xbb ()
   (interactive)
