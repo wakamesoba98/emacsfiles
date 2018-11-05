@@ -20,7 +20,8 @@
         cider-repl-use-clojure-font-lock t
         cider-prompt-save-file-on-load 'always-save
         cider-font-lock-dynamically '(macro core function var)
-        cider-overlays-use-font-lock t)
+        cider-overlays-use-font-lock t
+        nrepl-use-ssh-fallback-for-remote-hosts t)
   (cider-repl-toggle-pretty-printing))
 
 (use-package clj-refactor
