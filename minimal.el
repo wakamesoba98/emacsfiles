@@ -80,6 +80,9 @@
 ;; 現在行
 (global-hl-line-mode t)
 
+;; windmove
+(windmove-default-keybindings 'super)
+
 ;; 逆インデント
 (global-set-key (kbd "<backtab>") 'un-indent-by-removing-2-spaces)
 (defun un-indent-by-removing-2-spaces ()
