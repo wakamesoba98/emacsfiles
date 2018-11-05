@@ -58,7 +58,18 @@
 ;; ediff
 (setq ediff-window-setup-function 'ediff-setup-windows-plain)
 (setq ediff-split-window-function 'split-window-horizontally)
-(setq ediff-highlight-all-diffs t)
+(defun set-ediff-custom-colors ()
+  (set-face-attribute 'ediff-current-diff-A nil :background "DarkRed")
+  (set-face-attribute 'ediff-even-diff-A nil :background "DarkRed")
+  (set-face-attribute 'ediff-odd-diff-A nil :background "DarkRed")
+  (set-face-attribute 'ediff-fine-diff-A nil :background "Red3")
+  (set-face-attribute 'ediff-current-diff-B nil :background "DarkGreen")
+  (set-face-attribute 'ediff-even-diff-B nil :background "DarkGreen")
+  (set-face-attribute 'ediff-odd-diff-B nil :background "DarkGreen")
+  (set-face-attribute 'ediff-fine-diff-B nil :background "Green4"))
+(add-hook 'ediff-load-hook 'scroll-all-mode)
+(add-hook 'ediff-load-hook 'set-ediff-custom-colors)
+(add-hook 'ediff-quit-hook (lambda () (scroll-all-mode -1)))
 
 ;; 括弧
 (show-paren-mode t)
