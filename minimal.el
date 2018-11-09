@@ -21,7 +21,6 @@
 (setq js-indent-level 2)
 
 ;; 各種UI部品を無効
-(scroll-bar-mode -1)
 (tool-bar-mode 0)
 (menu-bar-mode 0)
 

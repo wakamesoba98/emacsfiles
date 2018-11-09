@@ -6,6 +6,7 @@
 (defvar packages
   '(darcula-theme
     use-package
+    diminish
     undo-tree
     all-the-icons
     find-file-in-project

@@ -5,6 +5,9 @@
 ;; 最大化して起動
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
+;; スクロールバー非表示
+(scroll-bar-mode -1)
+
 ;; フォント
 (when (>= emacs-major-version 24)
   (set-face-attribute 'default nil :family "Source Code Pro" :height 96)
