@@ -75,6 +75,7 @@
 (setq show-paren-style 'expression)
 (setq show-paren-delay 0.0)
 (set-face-attribute 'show-paren-match nil :background "Gray24")
+(set-face-attribute 'show-paren-mismatch nil :background "DarkOrange4")
 
 ;; 現在行
 (global-hl-line-mode t)
