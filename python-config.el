@@ -15,7 +15,6 @@
   (add-to-list 'company-backends 'company-jedi))
 
 (use-package python
-  :defer t
   :init
   (add-hook 'python-mode-hook 'config/enable-company-jedi)
   (add-hook 'python-mode-hook 'auto-virtualenvwrapper-activate)
