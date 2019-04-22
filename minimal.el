@@ -34,11 +34,17 @@
 (global-set-key (kbd "C-S-z") 'undo-tree-redo)
 
 ;; 行番号
-(require 'linum)
-(global-linum-mode 1)
-(setq linum-format "%3d ")
-(set-face-foreground 'linum "Gray53")
-(set-face-background 'linum "Gray20")
+(if (version<= "26.0.50" emacs-version)
+  (progn
+    (global-display-line-numbers-mode)
+    (set-face-foreground 'line-number "Gray53")
+    (set-face-background 'line-number "Gray20"))
+  (progn
+    (require 'linum)
+    (global-linum-mode 1)
+    (setq linum-format "%3d ")
+    (set-face-foreground 'linum "Gray53")
+    (set-face-background 'linum "Gray20")))
 
 ;; kill buffer
 (global-set-key (kbd "C-x k") 'kill-this-buffer)
