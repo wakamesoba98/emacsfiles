@@ -1,6 +1,6 @@
 (defvar repositories
-  '(("melpa"     . "https://stable.melpa.org/packages/")
-    ("gnu"       . "https://elpa.gnu.org/packages/")))
+  '(("melpa"     . "http://melpa.org/packages/")
+    ("gnu"       . "http://elpa.gnu.org/packages/")))
 
 (defvar packages
   '(darcula-theme
