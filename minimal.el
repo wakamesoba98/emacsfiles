@@ -1,6 +1,8 @@
 ;; テーマ
 (require 'darcula-theme)
 
+(setq debug-on-error t)
+
 ;; 初期画面止める
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)

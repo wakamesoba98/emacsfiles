@@ -1,6 +1,6 @@
 (defvar repositories
-  '(("melpa"     . "http://melpa.org/packages/")
-    ("gnu"       . "http://elpa.gnu.org/packages/")))
+  '(("gnu"       . "https://elpa.gnu.org/packages/")
+    ("melpa"     . "https://melpa.org/packages/")))
 
 (defvar packages
   '(darcula-theme
@@ -26,13 +26,16 @@
     jedi-core
     company-jedi
     virtualenvwrapper
-    auto-virtualenvwrapper))
+    auto-virtualenvwrapper
+    queue
+    terraform-mode
+    company-terraform))
 
 ;; リポジトリの設定
 (require 'package)
 (setq package-enable-at-startup nil)
 (dolist (repo repositories)
-  (add-to-list 'package-archives repo))
+  (add-to-list 'package-archives repo t))
 (package-initialize)
 
 ;; 自動でパッケージを入れる

@@ -1,5 +1,6 @@
 (use-package find-file-in-project
   :ensure t
+  :defer t
   :config
   (add-to-list 'ffip-prune-patterns "*/out/*")
   (add-to-list 'ffip-prune-patterns "*target/*")

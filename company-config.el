@@ -1,6 +1,7 @@
 ;; company
 (use-package company
   :ensure t
+  :defer t
   :init
   (add-hook 'after-init-hook 'global-company-mode)
   :config
@@ -15,6 +16,12 @@
 
 (use-package company-quickhelp
   :ensure t
+  :defer t
   :after company
   :config
   (company-quickhelp-mode t))
+
+;; Terraform
+(use-package company-terraform
+  :defer t
+  :init (company-terraform-init))
