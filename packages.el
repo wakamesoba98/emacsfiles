@@ -36,7 +36,6 @@
 (setq package-enable-at-startup nil)
 (dolist (repo repositories)
   (add-to-list 'package-archives repo t))
-(package-initialize)
 
 ;; 自動でパッケージを入れる
 (require 'cl)

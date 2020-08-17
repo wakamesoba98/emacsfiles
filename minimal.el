@@ -1,5 +1,6 @@
 ;; テーマ
 (require 'darcula-theme)
+(load-theme 'darcula t)
 
 (setq debug-on-error t)
 
