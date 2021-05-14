@@ -11,6 +11,9 @@
 ;; browse-url
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome-stable")
+(when (eq system-type 'windows-nt)
+  (setq browse-url-browser-function 'browse-url-generic
+        browse-url-generic-program "c:\\\\Program Files (x86)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe"))
 (global-set-key (kbd "C-c C-c C-p") 'browse-url-of-file)
 
 ;; YAML

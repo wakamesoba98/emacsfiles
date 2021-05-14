@@ -19,7 +19,7 @@ emacsfiles
 
 ## Setup
 
-`~/.emacs.d/init.el` に以下の2行を書くと使用可能です。
+`~/.emacs.d/init.el` (Windowsの場合は `C:\Users\ユーザー名\AppData\Roaming\.emacs.d\init.el`) に以下の2行を書くと使用可能です。
 
 ```
 (add-to-list 'load-path "/path/to/emacsfiles")

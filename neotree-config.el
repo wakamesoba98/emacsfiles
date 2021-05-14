@@ -4,6 +4,7 @@
   :config
   (add-to-list 'ffip-prune-patterns "*/out/*")
   (add-to-list 'ffip-prune-patterns "*target/*")
+  (when (eq system-type 'windows-nt) (setq ffip-find-executable "\"c:\\\\Program Files\\\\Git\\\\usr\\\\bin\\\\find.exe\""))
   :bind
   ("<C-return>" . find-file-in-project))
 
