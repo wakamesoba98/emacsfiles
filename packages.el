@@ -37,14 +37,10 @@
 (dolist (repo repositories)
   (add-to-list 'package-archives repo t))
 
-;; 自動でパッケージを入れる
-(require 'cl)
 (defun auto-install ()
-  (let ((not-installed (remove-if #'package-installed-p packages)))
-    (when not-installed
-      (package-refresh-contents)
-      (dolist (pkg not-installed)
-        (package-install pkg)))))
+  (dolist (package packages)
+    (unless (package-installed-p package)
+      (package-install package))))
 
 (auto-install)
 
