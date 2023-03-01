@@ -18,8 +18,10 @@
     clj-refactor
     ac-cider
     company
+    ivy
     markdown-mode
     yaml-mode
+    web-mode
     vagrant-tramp
     ag
     python-mode
@@ -29,7 +31,12 @@
     auto-virtualenvwrapper
     queue
     terraform-mode
-    company-terraform))
+    company-terraform
+    rust-mode
+    ansible-vault
+    dockerfile-mode
+    docker-compose-mode
+    kubernetes))
 
 ;; リポジトリの設定
 (require 'package)

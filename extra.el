@@ -23,6 +23,10 @@
   :mode
   ("\\.yml\\'" . yaml-mode))
 
+(add-hook 'yaml-mode-hook
+  (lambda ()
+    (and (string= (file-name-base) "vault") (ansible-vault-mode 1))))
+
 ;; CSS
 (setq css-indent-offset 2)
 
@@ -36,6 +40,13 @@
   (setq dumb-jump-mode t
         dumb-jump-selector 'ivy
         dumb-jump-use-visible-window nil))
+
+;; Ivy
+(use-package ivy
+  :ensure t
+  :diminish ivy-mode
+  :config
+  (ivy-mode 1))
 
 ;; LaTeX
 (defun pd ()

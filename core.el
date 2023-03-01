@@ -7,6 +7,8 @@
 (load "clojure-config")
 (load "python-config")
 (load "popwin-config")
+(load "docker-config")
+(load "web-mode-config")
 (load "memolist/memolist")
 (load "private")
 (when (display-graphic-p)

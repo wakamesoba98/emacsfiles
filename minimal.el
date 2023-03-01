@@ -2,8 +2,6 @@
 (require 'darcula-theme)
 (load-theme 'darcula t)
 
-(setq debug-on-error t)
-
 ;; 初期画面止める
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
@@ -35,6 +33,7 @@
 (global-undo-tree-mode)
 (global-set-key (kbd "C-z") 'undo)
 (global-set-key (kbd "C-S-z") 'undo-tree-redo)
+(setq undo-tree-auto-save-history nil)
 
 ;; 行番号
 (if (version<= "26.0.50" emacs-version)

@@ -25,3 +25,7 @@
 (use-package company-terraform
   :defer t
   :init (company-terraform-init))
+
+;; HTML
+(use-package company-web-html
+  :defer t)
