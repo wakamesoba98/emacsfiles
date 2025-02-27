@@ -49,7 +49,7 @@
     (set-face-background 'linum "Gray20")))
 
 ;; kill buffer
-(global-set-key (kbd "C-x k") 'kill-this-buffer)
+(global-set-key (kbd "C-x k") 'kill-current-buffer)
 
 ;; insert key を無効
 (define-key global-map [(insert)] nil)
@@ -104,3 +104,7 @@
         (untabify (match-beginning 0) (match-end 0)))
       (when (looking-at "^  ")
         (replace-match "")))))
+
+;; Heredocの色
+(custom-set-faces
+ '(sh-heredoc ((t (:foreground "khaki")))))
